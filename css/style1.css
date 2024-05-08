@@ -1,0 +1,370 @@
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .social-links {
+        justify-content: flex-start;
+        padding-top: 0;
+        margin-top: 10px; /* Adjust spacing */
+    }
+
+    .social-link {
+        margin-left: 0;
+        margin-right: 10px; /* Add margin to separate links */
+    }
+
+    header h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    header p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    #services {
+        padding-top: 20px;
+    }
+
+    .service {
+        width: 100%; /* Take full width on smaller screens */
+    }
+
+    #serviceContainer {
+        padding: 0 20px; /* Add padding to center content */
+    }
+
+    form {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+:root {
+    --victoria: #564382;
+    --lavender-gray: #CEC3DF;
+    --lavender-purple: #987DB4;
+    --blue-bell: #9C94C4;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --display: flex;
+  }
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+header div {
+    margin-right: 10px; /* Add some space between text and logo */
+    margin-right: 20px; /* Add some space between logo and text */
+
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    /* Adjust margin and padding as needed */
+    margin-left: auto; /* Align to the right */
+    padding-top: 10px;
+}
+
+.social-link {
+    margin-left: 10px; /* Add space between social links */
+    /* Adjust the width and height to make the icons smaller */
+    width: 30px;
+    height: 30px;
+text-decoration: none;
+color: white;
+margin-top: 10%;  
+}
+
+/* Adjust the size of the images within the social links */
+.social-link img {
+    width: 100%; /* Make the images fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.social-link:hover {
+    color: white; /* Adjust hover color as needed */
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--victoria), var(--lavender-purple), var(--blue-bell));
+    -webkit-background-clip: text; /* Apply gradient as text color for WebKit browsers */
+    -webkit-text-fill-color: transparent; /* Hide original text color for WebKit browsers */
+    margin: 0; /* Remove default margin */
+}
+
+header p {
+    font-size: smaller; /* You can adjust the size as needed */
+    background: linear-gradient(to right, var(--victoria), var(--lavender-purple), var(--blue-bell));
+    -webkit-background-clip: text; /* Apply gradient as text color for WebKit browsers */
+    -webkit-text-fill-color: transparent; /* Hide original text color for WebKit browsers */
+    margin: 0; /* Reset margin */
+}
+
+
+
+/* 
+#rays {
+    /* Optional: Adjust any additional styling for the heading 
+} */
+
+/* nav {
+    background: linear-gradient(to right, var(--victoria), var(--lavender-purple), var(--blue-bell));
+    position: relative; 
+}
+
+nav .nav_but{
+    text-decoration: none;
+color:white;
+padding: 30px;
+
+}
+
+
+nav .nav_but#hoover{
+    position: relative;
+    color: black;
+} */
+
+nav {
+    position: relative;
+    background: linear-gradient(to right, var(--victoria), var(--lavender-purple), var(--blue-bell));
+
+    overflow: hidden; /* Ensures the oval shape is contained within the nav */
+ 
+    
+}
+nav.show-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff; /* Background color for the menu */
+    z-index: 1;
+}
+
+    
+#menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 60px; /* Adjust the height of the oval as needed */
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1; /* Ensure the oval shape is behind the nav content */
+}
+
+nav .nav_but {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    position: relative; /* Ensure proper stacking context for z-index */
+}
+
+nav .nav_but:hover {
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    /* background: linear-gradient(to right, var(--victoria), var(--lavender-gray), var(--lavender-purple), var(--blue-bell)); */
+   
+    align-items: center;
+    display: block;
+    
+}
+/* company */
+
+#company-details {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Example background color */
+}
+
+#company-details .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#company-details h2,
+#company-details h3,
+#company-details p,
+#company-details .image-placeholder {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Fade transition */
+}
+
+#company-details h2,
+#company-details h3 {
+    margin-bottom: 20px;
+}
+
+#company-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#company-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 300px; /* Example height */
+    background-color: #ccc; /* Placeholder background color */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#company-details .fade-in {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: block;
+    text-align: center;
+    /* align-items:center; */
+}
+
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px; /* Add some padding to avoid content being hidden under fixed header */
+    
+}
+
+
+.service {
+    text-align: center;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
+    opacity: 0;
+    transition: opacity 1s ease; /* Smooth transition for opacity */
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.service h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#serviceContainer {
+    text-align: center; /* Center button horizontally */
+}
+
+#serviceButton {
+    /* Add any additional styling for the button */
+    /* background: linear-gradient(to right, var(--victoria), var(--lavender-purple), var(--blue-bell)); */
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(60, 60, 60);
+    font-size:medium;
+    border-radius: 20px;
+   padding: auto;
+
+}
+#serviceButton:hover {
+   
+    background: linear-gradient(to right, var(--victoria), var(--lavender-purple), var(--blue-bell));
+    color:white ;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+}
+
+/* section {
+    height: 500px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  } */
+
+
+  form {
+    background-color: var(--lavender-gray); /* Apply background color */
+    padding: 30px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    /* width: 400px; Set form width */
+    margin: 0 auto; /* Center horizontally */
+    width: 80%; /* Adjust form width for smaller screens
+}
+
+form div {
+    margin-bottom: 20px; /* Add space between form elements */
+}
+
+form label {
+    display: block; /* Make labels block-level elements */
+    margin-bottom: 5px; /* Add space below labels */
+    color: var(--victoria); /* Apply text color */
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%; /* Make inputs full width */
+    padding: 10px; /* Add padding */
+    border: 1px solid var(--blue-bell); /* Apply border color */
+    border-radius: 5px; /* Add border radius */
+}
+
+form textarea {
+    height: 100px; /* Adjust textarea height */
+}
+
+form button {
+    background-color: var(--lavender-purple); /* Apply button background color */
+    color: white; /* Apply button text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+form button:hover {
+    background-color: var(--blue-bell); /* Change background color on hover */
+}
+#service option[disabled] {
+    color: gray;
+}

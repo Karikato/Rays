@@ -1,0 +1,63 @@
+:root {
+    --victoria: #564382;
+    --lavender-gray: #CEC3DF;
+    --lavender-purple: #987DB4;
+    --blue-bell: #9C94C4;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Adjust to the height of the viewport */
+    margin: 0; /* Remove default margin */
+    background-color: var(--lavender-gray); /* Apply background color */
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    
+}
+
+form div {
+    margin-bottom: 15px; /* Add space between form elements */
+}
+
+form label {
+    display: block; /* Make labels block-level elements */
+    margin-bottom: 5px; /* Add space below labels */
+    color: var(--victoria); /* Apply text color */
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%; /* Make inputs full width */
+    padding: 8px; /* Add padding */
+    border: 1px solid var(--blue-bell); /* Apply border color */
+    border-radius: 5px; /* Add border radius */
+}
+
+form textarea {
+    height: 100px; /* Adjust textarea height */
+}
+
+form button {
+    background-color: var(--lavender-purple); /* Apply button background color */
+    color: white; /* Apply button text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+form button:hover {
+    background-color: var(--blue-bell); /* Change background color on hover */
+}
